@@ -1,10 +1,10 @@
 # alfianjau-portfolio
 
-> My impeccable Nuxt.js project
+> My badass Nuxt.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
