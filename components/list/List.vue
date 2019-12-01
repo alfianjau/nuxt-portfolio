@@ -1,9 +1,21 @@
 <template>
-  <div class="list col-md-6 rounded">I'm a {{ source }} list</div>
+  <div class="list w-full rounded p-2 mx-3">
+    <ListItem
+      v-for="entity in entities"
+      :key="entity.id"
+      :item-type="source"
+      :data="entity"
+    />
+  </div>
 </template>
+
 <script>
+import ListItem from '@/components/list/items/ListItem'
 export default {
   name: 'List',
+  components: {
+    ListItem
+  },
   props: {
     source: {
       type: String,
@@ -52,8 +64,12 @@ export default {
   }
 }
 </script>
-<style scoped>
+
+<style lang="scss" scoped>
+$background: #eff8ff;
 .list {
-  background: gray;
+  background: $background;
+  max-height: 550px;
+  overflow: auto;
 }
 </style>

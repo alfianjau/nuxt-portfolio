@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-link :to="{ name: 'user' }" class="text-lg">
+    <nuxt-link :to="{ name: 'user' }" class="text-lg font-bold">
       {{ name }} - "{{ username }}"
     </nuxt-link>
     <div class="flex flex-wrap justify-start my-2">
@@ -23,6 +23,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'User',
