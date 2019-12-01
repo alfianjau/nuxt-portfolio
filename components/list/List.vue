@@ -31,7 +31,7 @@ export default {
       this.$store
         .dispatch('GET_USERS')
         .then((res) => {
-          console.log(res)
+          this.entities = res.data
         })
         .catch((err) => {
           console.log('API error')
@@ -42,7 +42,7 @@ export default {
       this.$store
         .dispatch('GET_COMMENTS')
         .then((res) => {
-          console.log(res)
+          this.entities = res.data
         })
         .catch((err) => {
           console.log('API error')
@@ -52,9 +52,8 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
-$background: #eff8ff;
+<style scoped>
 .list {
-  background: $background;
+  background: gray;
 }
 </style>
