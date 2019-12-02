@@ -15,6 +15,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import User from '@/components/list/items/User'
 import Comment from '@/components/list/items/Comment'
