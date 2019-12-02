@@ -1,20 +1,28 @@
 <template>
-  <div class="list w-full rounded p-2 mx-3">
-    <ListItem
+  <div class="list ">
+    <b-list-group>
+      <b-list-group-item>
+        <ListItem
       v-for="entity in entities"
       :key="entity.id"
       :item-type="source"
       :data="entity"
-    />
+        />
+        </b-list-group-item>
+    </b-list-group>
+
   </div>
 </template>
 
 <script>
 import ListItem from '@/components/list/items/ListItem'
+import { BListGroup, BListGroupItem } from 'bootstrap-vue'
 export default {
   name: 'List',
   components: {
-    ListItem
+    ListItem,
+    BListGroup,
+    BListGroupItem
   },
   props: {
     source: {
