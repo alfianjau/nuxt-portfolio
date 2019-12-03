@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Alfianjau portfolio project ",
   "author": "alfianjau",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
