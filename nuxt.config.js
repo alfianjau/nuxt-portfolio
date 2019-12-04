@@ -47,8 +47,12 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     // style resource loader
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    injected: true
+  },
   styleResources: {
     scss: [
       // './assets/abstracts/_mixins.scss'   use underscore "_" & also file extension ".scss"
