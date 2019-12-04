@@ -14,6 +14,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import { BListGroup, BListGroupItem } from 'bootstrap-vue'
 import ListItem from '@/components/list/items/ListItem'
 export default {
