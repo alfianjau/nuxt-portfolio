@@ -2,5 +2,5 @@
   "title": "Testing",
   "date": "2019-12-04T07:11:52.876Z",
   "description": "Trial on netlify cms",
-  "body": "i've use headless cms darling"
+  "body": "![trial image](/img/rawrus.png \"trial image\")\n\n```\ni've use headless cms darling\n```"
 }
