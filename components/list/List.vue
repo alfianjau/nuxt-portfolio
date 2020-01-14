@@ -3,20 +3,19 @@
     <b-list-group>
       <b-list-group-item>
         <ListItem
-      v-for="entity in entities"
-      :key="entity.id"
-      :item-type="source"
-      :data="entity"
+          v-for="entity in entities"
+          :key="entity.id"
+          :item-type="source"
+          :data="entity"
         />
-        </b-list-group-item>
+      </b-list-group-item>
     </b-list-group>
-
   </div>
 </template>
 
 <script>
-import ListItem from '@/components/list/items/ListItem'
 import { BListGroup, BListGroupItem } from 'bootstrap-vue'
+import ListItem from '@/components/list/items/ListItem'
 export default {
   name: 'List',
   components: {
