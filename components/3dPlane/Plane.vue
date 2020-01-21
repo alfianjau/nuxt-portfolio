@@ -37,6 +37,7 @@ export default {
     camera.position.y = 100;
     camera.position.z = 1000;
     const renderer = new THREE.WebGLRenderer({antialias:true,canvas:canvas});
+    renderer.setClearColor(new THREE.Color(0xEEEEEE, 1.0));
     // renderer.setSize(canvas.width/canvas.height);
     // document.body.appendChild(renderer.domElement);
     const hlight = new THREE.AmbientLight (0x404040,100);
@@ -64,39 +65,12 @@ export default {
     scene.add(gltf.scene);
     // animate();
 });
-  },
-  methods: {
-    loadUsers() {
-      this.$store
-        .dispatch('GET_USERS')
-        .then((res) => {
-          this.entities = res.data
-        })
-        .catch((err) => {
-          console.log('API error')
-          console.log(err)
-        })
-    },
-    loadComments() {
-      this.$store
-        .dispatch('GET_COMMENTS')
-        .then((res) => {
-          this.entities = res.data
-        })
-        .catch((err) => {
-          console.log('API error')
-          console.log(err)
-        })
-    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 $background: #eff8ff;
-#canvas{
-
-}
 .list {
   background: $background;
   max-height: 550px;
