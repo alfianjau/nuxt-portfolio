@@ -1,10 +1,11 @@
 <template>
   <div class="container">
     <div>
-      <logo />
+      <!-- <logo />
       <h1 class="title">alfianjau-portfolio</h1>
-      <h2 class="subtitle">My badass Nuxt.js project</h2>
-      <div class="links">
+      <h2 class="subtitle">My badass Nuxt.js project</h2> -->
+      <Plane />
+      <!-- <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green"
           >Documentation</a
         >
@@ -14,20 +15,22 @@
           class="button--grey"
           >GitHub</a
         >
-      </div>
-      <List />
+      </div> -->
+      <!-- <List /> -->
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import List from '@/components/list/List'
+// import Logo from '~/components/Logo.vue'
+// import List from '@/components/list/List'
+import Plane from '@/components/3dPlane/Plane'
 
 export default {
   components: {
-    Logo,
-    List
+    // Logo,
+    // List,
+    Plane
   },
   head() {
     return {
